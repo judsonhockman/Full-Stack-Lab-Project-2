@@ -1,0 +1,8 @@
+<div class="post">
+        <h3>{{ post.title }}</h3>
+        <h5>Written by {{ post.authorfirstname }} {{ post.authorlastname }}</h5>
+        <h5>{{ post.createdAt | date: "dd MMM y" }}</h5>
+        <p>{{ post.content }}</p>
+        <button ng-click="edit()">Edit</button>
+        <button ng-click="delete()">Delete</button>
+</div>
