@@ -15,7 +15,7 @@ app.use(prerender);
 app.use(express.static(clientPath));
 app.use(cookieParser());
 app.use(bodyParser.json());
-app.use('./api', api); // api after comma is variable api from line 4 above
+app.use('/api', api); // api after comma is variable api from line 4 above
 
 app.get('*', routing.stateRouting);
 app.listen(process.env.PORT || 3000);

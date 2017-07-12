@@ -5,7 +5,7 @@ exports.all = function() {
 }
 
 exports.read = function(id) {
-    return db.row(GetPost, [id]);
+    return db.row('GetPost', [id]);
 }
 
 exports.update = function(id, title, content, categoryid) {

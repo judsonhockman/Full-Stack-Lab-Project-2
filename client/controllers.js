@@ -32,7 +32,7 @@ angular.module('AngularBlog.controllers', [])
         }
     }])
 
-    .controller('UpdatePostController', ['$scope', 'Post', 'Category', '$location', '$routePatams', function ($scope, Post, Category, $location, $routeParams) {
+    .controller('UpdatePostController', ['$scope', 'Post', 'Category', '$location', '$routeParams', function ($scope, Post, Category, $location, $routeParams) {
         $scope.categories = Category.query();
         $scope.post = Post.get({ id: routeParams.id }, function() {
             $scope.post.categoryid = String($scope.post.categoryid);

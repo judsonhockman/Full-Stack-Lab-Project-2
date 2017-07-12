@@ -10,9 +10,11 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
     "express": "^4.15.3",
     "mysql": "^2.13.0",
-    "prerender": "^4.4.1"
+    "prerender": "^4.4.1",
+    "prerender-node": "^2.7.2"
   },
   "devDependencies": {},
   "repository": {
