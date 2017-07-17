@@ -9,21 +9,17 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt":  "^1.0.2",
     "body-parser": "^1.17.2",
     "cookie-parser": "^1.4.3",
     "express": "^4.15.3",
+    "express-mysql-session": "^1.2.1",
+    "express-session": "^1.15.3",
     "mysql": "^2.13.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
     "prerender": "^4.4.1",
-    "prerender-node": "^2.7.2"
-  },
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/judsonhockman/Full-Stack-Lab-Project-2.git"
-  },
-  "bugs": {
-    "url": "https://github.com/judsonhockman/Full-Stack-Lab-Project-2/issues"
-  },
-  "homepage": "https://github.com/judsonhockman/Full-Stack-Lab-Project-2#readme",
-  "description": ""
+    "prerender-node": "^2.7.2",
+    "stripe": "^4.23.1"
+  }
 }

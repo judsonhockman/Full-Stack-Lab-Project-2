@@ -6,9 +6,12 @@ angular.module('AngularBlog.factories', [])
         }
     });
 }])
+.factory('User', ['$resource', function($resource) {
+    return $resource('/api/users/:id');
+}])
 .factory('Category', ['$resource', function($resource) {
     return $resource('/api/categories/:id');
 }])
-.factory('User', ['$resource', function($resource) {
-    return $resource('/api/users/:id');
+.factory('Donation', ['$resource', function($resource) {
+    return $resource('/api/donations/:id');
 }]);

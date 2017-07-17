@@ -1,6 +1,6 @@
 var path = require('path');
 
-var clientPath = path.join(__dirname, '../..client');
+var clientPath = path.join(__dirname, '../../client');
 
 exports.stateRouting = function (req, res, next) { // middleware requires three parameters
     if (isAsset(req.url)) {
@@ -15,7 +15,7 @@ function isAsset(path) {
         return false;
     }
     var last = pieces[pieces.length - 1];
-    if (path.indexOf('/api') !== -1 || path.indexOf('?') !== -1) {
+    if (path.indexOf('/api') !== -1 || path.indexOf('/?') !== -1) {
         return true;
     } else if (last.indexOf('.') !== -1) {
         return true;
